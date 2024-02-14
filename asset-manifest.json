@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Unlimited-Shopping/static/css/main.4fe34926.css",
+    "main.js": "/Unlimited-Shopping/static/js/main.22de7048.js",
+    "index.html": "/Unlimited-Shopping/index.html",
+    "main.4fe34926.css.map": "/Unlimited-Shopping/static/css/main.4fe34926.css.map",
+    "main.22de7048.js.map": "/Unlimited-Shopping/static/js/main.22de7048.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fe34926.css",
+    "static/js/main.22de7048.js"
+  ]
+}
