@@ -1,0 +1,163 @@
+.basket-container {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: left;
+  width: 60%; /* Adjust as needed */
+  position: fixed;
+  top: 20%;
+  right: 20%;
+  list-style: none;
+  z-index: 10;
+  max-height: 20rem;
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Styling for the scrollbar */
+.basket-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.basket-container::-webkit-scrollbar-thumb {
+  background-color: #61dafb;
+  border-radius: 4px;
+}
+
+.basket-container::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+/* .basket-container {
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  text-align: left;
+  width: 1000px;
+  position: absolute;
+  top: 30vh;
+  right: 50vh;
+  list-style: none;
+  z-index: 10;
+  max-height: 20rem;
+  overflow: scroll;
+} */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.basket-container::before {
+  backdrop-filter: blur(8px); /* Adjust the blur as needed */
+}
+
+.basket-container h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.basket-container .total {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: green;
+}
+
+.kapat {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 35px;
+  cursor: pointer;
+  background-color: red;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.kapat:hover {
+  background-color: rgb(141, 9, 9);
+}
+
+.ode {
+  /* position: absolute; */
+  bottom: 10px;
+  right: 10px;
+  background: rgb(23, 42, 218);
+  padding: 10px 40px;
+  /* margin-top: 55px; */
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.ode:hover {
+  background: rgb(9, 23, 141);
+}
+
+.reset-basket {
+  background: red;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-left: 50px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.reset-basket:hover {
+  background: rgb(141, 9, 9);
+}
+
+.upload2 {
+  margin-top: 55px;
+  /* margin-left: 25vw; */
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload2:hover {
+  background-color: #4fa8db;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .basket-container {
+    width: 90%; /* Adjust width for smaller screens */
+    right: 5%;
+    top: 10%;
+  }
+
+  .ode,
+  .reset-basket {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+}

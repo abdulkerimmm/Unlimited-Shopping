@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.firstdiv {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px;
+}
+
+.head1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.head2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.head3 {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.label1 {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.input1 {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input1:focus {
+  outline: none;
+  box-shadow: 0 0 10px #61dafb;
+}
+
+.button1 {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #4fa8db;
+}
+
+.upload {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #61dafb;
+  color: red;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload:hover {
+  background-color: #4fa8db;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .input1 {
+    width: 100%;
+  }
+
+  .button1,
+  .upload {
+    top: 50px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,74 @@
+.productcss {
+  padding: 0px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 24%;
+}
+
+.productcss img {
+  width: 100%;
+}
+
+.productcss h6 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.productcss .price {
+  font-size: 20px;
+  color: green;
+}
+
+.productcss .actions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.actions button {
+  height: 40px;
+  padding: 0 15px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.actions button[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.actions .amount {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #555;
+}
+
+.actions .buy-btn {
+  background: #61dafb;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 0 4px 4px 0;
+}
+
+.actions .sell-btn {
+  background: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .productcss {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+}

@@ -1,0 +1,72 @@
+.buttonBasket {
+  cursor: pointer;
+  font: inherit;
+  background-color: #8b5cf6;
+  color: white;
+  padding: 0.45rem 1rem;
+  border: none;
+  position: absolute;
+  right: 200px;
+  top: 10px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.buttonBasket:hover,
+.buttonBasket:active {
+  background-color: #9975f6;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #f7287b;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.buttonBasket:hover .badge,
+.buttonBasket:active .badge {
+  background-color: #f82063;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .buttonBasket {
+    width: 100%; /* Adjust the right position for smaller screens */
+    top: 90px;
+    left: 5px;
+  }
+}

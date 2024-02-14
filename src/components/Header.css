@@ -1,0 +1,28 @@
+.Header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, #20b820, #14be2a);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.Header span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .Header {
+    height: 50px; /* Adjust the height for smaller screens */
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+
+  .Header span {
+    margin: 0 5px; /* Adjust the margin for smaller screens */
+  }
+}
